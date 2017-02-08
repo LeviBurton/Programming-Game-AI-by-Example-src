@@ -120,7 +120,7 @@ void GraphHelper_CreateGrid(graph_type& graph,
   //now to calculate the edges. (A position in a 2d array [x][y] is the
   //same as [y*NumCellsX + x] in a 1d array). Each cell has up to eight
   //neighbours.
-  for (row=0; row<NumCellsY; ++row)
+  for (int row=0; row<NumCellsY; ++row)
   {
     for (int col=0; col<NumCellsX; ++col)
     {
